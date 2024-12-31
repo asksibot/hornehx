@@ -1,0 +1,435 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: #2c3e50; /* Dark background */
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img.icon {
+    height: 50px;
+    margin-right: 10px;
+}
+
+header h1 {
+    font-size: 1.8em;
+}
+
+/* Navigation Styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff; /* White text for navigation links */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #1abc9c; /* Light green on hover */
+}
+
+/* Landing Page Link Specific Styling */
+.landing-link {
+    display: inline-block;
+    color: #ffffff; /* White text */
+    background-color: #2c3e50; /* Dark background matching header */
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.landing-link:visited {
+    color: #ffffff; /* Ensure visited links remain white */
+}
+
+.landing-link:hover {
+    background-color: #FFD700; /* Yellow hover effect */
+    color: #ffffff; /* Keep text white on hover */
+}
+
+/* Hamburger Menu for Mobile */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* Main Section Styling */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    /* Added subtle shadow for depth */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #1abc9c;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+section p {
+    margin-bottom: 10px;
+}
+
+/* Icon Styling */
+.decorative-icon {
+    display: block;
+    margin: 20px auto;
+    max-width: 150px;
+}
+
+/* Timeline Styling */
+.timeline {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+.timeline h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* Collapsible Class Consolidated */
+.collapsible {
+    background-color: #2c3e50; /* Dark background */
+    color: #ffffff; /* White text */
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.collapsible:hover {
+    background-color: #1abc9c; /* Light green on hover */
+}
+
+.content {
+    padding: 0 20px;
+    display: none;
+    overflow: hidden;
+    background-color: #fafafa;
+    border-left: 2px solid #4CAF50;
+    border-right: 2px solid #4CAF50;
+    border-bottom: 2px solid #4CAF50;
+    border-radius: 0 0 5px 5px;
+    margin-bottom: 10px;
+}
+
+.content h3 {
+    margin-top: 10px;
+    color: #4CAF50;
+}
+
+.content p {
+    margin: 5px 0;
+}
+
+/* Photo Gallery Section */
+.photo-category {
+    margin-bottom: 40px;
+}
+
+.photo-category h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.gallery a {
+    text-decoration: none;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    height: 150px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Family Members Section */
+.family-members {
+    margin-top: 40px;
+}
+
+.family-members h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.family-member {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.family-member h3 {
+    margin-top: 0;
+    color: #4CAF50;
+}
+
+.family-member ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #2c3e50; /* Dark background */
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 0.9em;
+}
+
+/* Form Styling */
+form {
+    margin-top: 20px;
+    padding: 20px;
+    background: #fdfdfd;
+    border-radius: 8px;
+    /* Added shadow for depth */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="email"],
+form input[type="file"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form button[type="submit"] {
+    background-color: #2c3e50;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+    background-color: #1abc9c;
+}
+
+/* Questionnaire-Specific Styles */
+#questionnaireForm {
+    margin-top: 20px;
+}
+
+#narrativeContent {
+    background-color: #F8F9F9;
+    padding: 20px;
+    border: 1px solid #D5D8DC;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.add-btn {
+    background-color: #27AE60;
+    margin-bottom: 10px;
+    padding: 8px 16px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.add-btn:hover {
+    background-color: #1E8449;
+}
+
+.remove-btn {
+    background-color: #C0392B;
+    margin-top: -5px;
+    margin-bottom: 15px;
+    padding: 6px 12px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.remove-btn:hover {
+    background-color: #A93226;
+}
+
+input[type="text"], input[type="date"], input[type="time"], textarea {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    /* Navigation */
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #2c3e50;
+        width: 100%;
+    }
+
+    nav ul.open {
+        display: flex;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 1.2em;
+    }
+
+    /* Hamburger Menu */
+    .hamburger {
+        display: block;
+    }
+
+    /* Header */
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header .logo {
+        margin-bottom: 10px;
+    }
+
+    /* Adjust Collapsible and Content Padding */
+    .collapsible {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .content {
+        padding: 0 15px;
+    }
+
+    .family-member {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    section h2 {
+        font-size: 1.5em;
+    }
+
+    .gallery img {
+        height: 150px;
+    }
+}
